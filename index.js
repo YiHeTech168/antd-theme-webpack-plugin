@@ -48,7 +48,7 @@ class AntDesignThemePlugin {
 							module.buildInfo.fileDependencies.forEach((filepath) => {
 								// we've learned a lot about the source structure now...
 								if (/\/src\/.+\.less$/gi.test(filepath)) {
-									if (!/antd.less/gi.test(filepath)) {
+									if (!/\/src\/styles\/pc\/index.less/gi.test(filepath)) {
 										paths.add(filepath);
 									}
 								}
